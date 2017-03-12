@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FB2BA919-17D1-492C-B811-0B792B7213F8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>v5_Modularity</RootNamespace>
+    <ProjectName>ShapeManipulation</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Deformation\DeformFramework.cpp" />
+    <ClCompile Include="Deformation\ModelHandler.cpp" />
+    <ClCompile Include="Deformation\RenderCallbackFunction.cpp" />
+    <ClCompile Include="Deformation\RenderManager.cpp" />
+    <ClCompile Include="Deformation\TextureManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ModelPreparation\ContourDetector.cpp" />
+    <ClCompile Include="ModelPreparation\DataProvider.cpp" />
+    <ClCompile Include="ModelPreparation\DetectionCallbackFunction.cpp" />
+    <ClCompile Include="ModelPreparation\EFCHandler.cpp" />
+    <ClCompile Include="ModelPreparation\Meshing.cpp" />
+    <ClCompile Include="ModelPreparation\triangle.c" />
+    <ClCompile Include="opencv_link.cpp" />
+    <ClCompile Include="opengl_link.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonFunc.h" />
+    <ClInclude Include="Deformation\DeformFramework.h" />
+    <ClInclude Include="Deformation\ModelHandler.h" />
+    <ClInclude Include="Deformation\RenderCallbackFunction.h" />
+    <ClInclude Include="Deformation\RenderManager.h" />
+    <ClInclude Include="Deformation\TextureManager.h" />
+    <ClInclude Include="local_glm.h" />
+    <ClInclude Include="ModelPreparation\ContourDetector.h" />
+    <ClInclude Include="ModelPreparation\DataProvider.h" />
+    <ClInclude Include="ModelPreparation\DetectionCallbackFunction.h" />
+    <ClInclude Include="ModelPreparation\EFCHandler.h" />
+    <ClInclude Include="ModelPreparation\FileUtil.hpp" />
+    <ClInclude Include="ModelPreparation\Meshing.h" />
+    <ClInclude Include="ModelPreparation\triangle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\fragment.glsl" />
+    <None Include="shader\vertex.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

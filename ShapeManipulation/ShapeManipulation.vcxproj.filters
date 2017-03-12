@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{e07493f0-539d-4fef-af07-c3c42afde8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ModelDataProvider">
+      <UniqueIdentifier>{9cd11335-7ef7-4011-b21f-fb84cc77b009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ModelDataProvider">
+      <UniqueIdentifier>{74d87201-3bdd-4d6d-bb2b-99b0b53b20e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Deformation">
+      <UniqueIdentifier>{cb78b785-1c84-4c37-892e-ce79352cc6cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Deformation">
+      <UniqueIdentifier>{9bfcfa72-68e4-45df-8c95-2e12111392b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opencv_link.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="opengl_link.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Deformation\DeformFramework.cpp">
+      <Filter>源文件\Deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Deformation\ModelHandler.cpp">
+      <Filter>源文件\Deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Deformation\RenderCallbackFunction.cpp">
+      <Filter>源文件\Deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Deformation\RenderManager.cpp">
+      <Filter>源文件\Deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="Deformation\TextureManager.cpp">
+      <Filter>源文件\Deformation</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\triangle.c">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\ContourDetector.cpp">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\DataProvider.cpp">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\DetectionCallbackFunction.cpp">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\EFCHandler.cpp">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelPreparation\Meshing.cpp">
+      <Filter>源文件\ModelDataProvider</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommonFunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="local_glm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Deformation\DeformFramework.h">
+      <Filter>头文件\Deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Deformation\ModelHandler.h">
+      <Filter>头文件\Deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Deformation\RenderCallbackFunction.h">
+      <Filter>头文件\Deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Deformation\RenderManager.h">
+      <Filter>头文件\Deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="Deformation\TextureManager.h">
+      <Filter>头文件\Deformation</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\ContourDetector.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\DataProvider.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\DetectionCallbackFunction.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\EFCHandler.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\Meshing.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\triangle.h">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelPreparation\FileUtil.hpp">
+      <Filter>头文件\ModelDataProvider</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\fragment.glsl">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\vertex.glsl">
+      <Filter>shader</Filter>
+    </None>
+  </ItemGroup>
+</Project>
